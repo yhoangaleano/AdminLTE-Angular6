@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+   server-side-angular-way.component.css
+*/
+.no-data-available {
+  text-align: center;
+}
+
+/*
+   src/styles.css (i.e. your global style)
+*/
+.dataTables_empty {
+  display: none;
+}
+
+div.dt-buttons{
+  clear: both;
+  margin: 15px 0 15px 0;
+}
+
+.dataTables_filter {
+  float: right;
+}
+
+.dataTables_length {
+  float: left;
+}

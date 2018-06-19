@@ -17,9 +17,34 @@
   <!-- Main content -->
   <section class="content">
 
-    <p>
-      admin-home works!
-    </p>
+      <div class="box">
+          <div class="box-header">
+            <h3 class="box-title">Listado de personas</h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+
+              <table class="table table-hover" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>First name</th>
+                      <th>Last name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let person of persons">
+                      <td>{{ person.id }}</td>
+                      <td>{{ person.firstName }}</td>
+                      <td>{{ person.lastName }}</td>
+                    </tr>
+                  </tbody>
+                  </table>
+          </div>
+          <!-- /.box-body -->
+        </div>
+
+
 
   </section>
   <!-- /.content -->
